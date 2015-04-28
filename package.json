@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/nouveller/babel-test",
   "devDependencies": {
+    "babelify": "^6.0.2",
+    "browserify": "^9.0.8",
     "gulp": "^3.8.11",
-    "gulp-babel": "^5.1.0",
-    "gulp-webserver": "^0.9.0"
+    "gulp-webserver": "^0.9.0",
+    "vinyl-source-stream": "^1.1.0"
   }
 }

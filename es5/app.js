@@ -1,8 +1,4 @@
-class Animal {
-  constructor(name) {
-    this.name = name;
-  }
-}
+import Animal from './modules/animal';
 
 var horse = new Animal('Black Beauty');
 console.log(horse);

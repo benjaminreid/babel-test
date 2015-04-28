@@ -1,12 +1,18 @@
 var gulp = require('gulp');
-var babel = require('gulp-babel');
 var webserver = require('gulp-webserver');
+var babelify = require('babelify');
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
 
 gulp.task('compile', function() {
-  return gulp.src('es5/*.js')
-    .pipe(babel())
-    .pipe(gulp.dest('es6'))
-  ;
+  browserify({
+    entries: './es5/app.js',
+    debug: true
+  })
+  .transform(babelify)
+  .bundle()
+  .pipe(source('app.js'))
+  .pipe(gulp.dest('./es6'));
 });
 
 gulp.task('default', function () {
