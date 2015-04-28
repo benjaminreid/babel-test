@@ -21,6 +21,7 @@
   "homepage": "https://github.com/nouveller/babel-test",
   "devDependencies": {
     "gulp": "^3.8.11",
-    "gulp-babel": "^5.1.0"
+    "gulp-babel": "^5.1.0",
+    "gulp-webserver": "^0.9.0"
   }
 }
